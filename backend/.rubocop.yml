@@ -228,7 +228,7 @@ Layout/LineEndStringConcatenationIndentation:
   Enabled: true
 
 Layout/LineLength:
-  Enabled: false
+  Max: 100
 
 Layout/MultilineArrayBraceLayout:
   Enabled: true

@@ -13,8 +13,6 @@ COPY package.json .
 COPY package-lock.json .
 
 # アプリケーションの依存関係をインストール
-# RUN npm install && \
-#     npm install react-scripts
 RUN npm install
 
 # ポートを設定
