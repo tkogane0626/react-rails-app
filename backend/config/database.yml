@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: postgres
+  username: pguser
+  password: pgpassword
+
+development:
+  <<: *default
+  database: react-rails-app_development
+
+test:
+  <<: *default
+  database: react-rails-app_test
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+  database: react-rails-app_production
+  username: react-rails-app
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
